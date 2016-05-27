@@ -19,9 +19,9 @@ casper.test.begin('NO BankId Logon', 3, function suite(test) {
         if (this.exists('.wrp')) return true;
         else return false;
     }, function then() {
-			test.assertExists('.wrp', "Iframe Switched Successfully")
+				test.assertExists('.wrp', "Iframe Switched Successfully")
 		}, function timeout() {
-			test.done();
+				test.done();
 		}, 10000);
 
     casper.run(function() {
